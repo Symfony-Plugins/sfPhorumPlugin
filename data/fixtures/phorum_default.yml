@@ -1,0 +1,481 @@
+PhorumSettings:
+  PhorumSettings_title:
+    name: title
+    type: V
+    data: Phorum 5
+  PhorumSettings_cache:
+    name: cache
+    type: V
+    data: /tmp
+  PhorumSettings_session_timeout:
+    name: session_timeout
+    type: V
+    data: 30
+  PhorumSettings_short_session_timeout:
+    name: short_session_timeout
+    type: V
+    data: 60
+  PhorumSettings_tight_security:
+    name: tight_security
+    type: V
+    data: 0
+  PhorumSettings_session_path:
+    name: session_path
+    type: V
+    data: /
+  PhorumSettings_session_domain:
+    name: session_domain
+    type: V
+    data:
+  PhorumSettings_admin_session_salt:
+    name: admin_session_salt
+    type: V
+    data: 0.37980900 1215807041
+  PhorumSettings_cache_users:
+    name: cache_users
+    type: V
+    data: 0
+  PhorumSettings_cache_rss:
+    name: cache_rss
+    type: V
+    data: 0
+  PhorumSettings_default_template:
+    name: default_template
+    type: V
+    data: default
+  PhorumSettings_default_language:
+    name: default_language
+    type: V
+    data: english
+  PhorumSettings_use_cookies:
+    name: use_cookies
+    type: V
+    data: 1
+  PhorumSettings_use_bcc:
+    name: use_bcc
+    type: V
+    data: 1
+  PhorumSettings_use_rss:
+    name: use_rss
+    type: V
+    data: 1
+  PhorumSettings_internal_version:
+    name: internal_version
+    type: V
+    data: 2007031400
+  PhorumSettings_PROFILE_FIELDS:
+    name: PROFILE_FIELDS
+    type: S
+    data: >
+      a:2:{s:10:"num_fields";i:1;i:0;a:3:{s:4:"name";s:9:"real_name";s:6:"length";s:3:"255";s:13:"html_disabled";s:1:"1";}}
+  PhorumSettings_enable_pm:
+    name: enable_pm
+    type: V
+    data: 1
+  PhorumSettings_user_edit_timelimit:
+    name: user_edit_timelimit
+    type: V
+    data: 0
+  PhorumSettings_enable_new_pm_count:
+    name: enable_new_pm_count
+    type: V
+    data: 1
+  PhorumSettings_enable_dropdown_userlist:
+    name: enable_dropdown_userlist
+    type: V
+    data: 1
+  PhorumSettings_enable_moderator_notifications:
+    name: enable_moderator_notifications
+    type: V
+    data: 1
+  PhorumSettings_show_new_on_index:
+    name: show_new_on_index
+    type: V
+    data: 1
+  PhorumSettings_dns_lookup:
+    name: dns_lookup
+    type: V
+    data: 1
+  PhorumSettings_tz_offset:
+    name: tz_offset
+    type: V
+    data: 0
+  PhorumSettings_user_time_zone:
+    name: user_time_zone
+    type: V
+    data: 1
+  PhorumSettings_user_template:
+    name: user_template
+    type: V
+    data: 0
+  PhorumSettings_registration_control:
+    name: registration_control
+    type: V
+    data: 1
+  PhorumSettings_file_uploads:
+    name: file_uploads
+    type: V
+    data: 0
+  PhorumSettings_file_types:
+    name: file_types
+    type: V
+    data:
+  PhorumSettings_max_file_size:
+    name: max_file_size
+    type: V
+    data:
+  PhorumSettings_file_space_quota:
+    name: file_space_quota
+    type: V
+    data:
+  PhorumSettings_file_offsite:
+    name: file_offsite
+    type: V
+    data: 0
+  PhorumSettings_system_email_from_name:
+    name: system_email_from_name
+    type: V
+    data:
+  PhorumSettings_hide_forums:
+    name: hide_forums
+    type: V
+    data: 1
+  PhorumSettings_track_user_activity:
+    name: track_user_activity
+    type: V
+    data: 86400
+  PhorumSettings_html_title:
+    name: html_title
+    type: V
+    data: Phorum
+  PhorumSettings_head_tags:
+    name: head_tags
+    type: V
+    data:
+  PhorumSettings_redirect_after_post:
+    name: redirect_after_post
+    type: V
+    data: list
+  PhorumSettings_reply_on_read_page:
+    name: reply_on_read_page
+    type: V
+    data: 1
+  PhorumSettings_status:
+    name: status
+    type: V
+    data: normal
+  PhorumSettings_use_new_folder_style:
+    name: use_new_folder_style
+    type: V
+    data: 1
+  PhorumSettings_default_forum_options:
+    name: default_forum_options
+    type: S
+    data: >
+      a:24:{s:8:"forum_id";s:1:"0";s:10:"moderation";s:1:"0";s:16:"email_moderators";s:1:"0";s:9:"pub_perms";i:1;s:9:"reg_perms";i:15;s:13:"display_fixed";i:0;s:8:"template";s:13:"embed_default";s:8:"language";s:7:"english";s:13:"threaded_list";s:1:"0";s:13:"threaded_read";s:1:"0";s:17:"reverse_threading";s:1:"0";s:12:"float_to_top";s:1:"1";s:16:"list_length_flat";i:30;s:20:"list_length_threaded";i:15;s:11:"read_length";i:30;s:18:"display_ip_address";s:1:"0";s:11:"count_views";s:1:"2";s:15:"check_duplicate";s:1:"1";s:18:"allow_email_notify";s:1:"0";s:15:"max_attachments";i:0;s:22:"allow_attachment_types";s:0:"";s:19:"max_attachment_size";i:0;s:24:"max_totalattachment_size";i:0;s:5:"vroot";i:0;}
+  PhorumSettings_hooks:
+    name: hooks
+    type: S
+    data: >
+      a:9:{s:6:"format";a:2:{s:4:"mods";a:2:{i:0;s:6:"bbcode";i:1;s:7:"smileys";}s:5:"funcs";a:2:{i:0;s:14:"phorum_bb_code";i:1;s:25:"phorum_mod_smileys_format";}}s:5:"quote";a:2:{s:4:"mods";a:1:{i:0;s:6:"bbcode";}s:5:"funcs";a:1:{i:0;s:20:"phorum_bb_code_quote";}}s:10:"common_pre";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:34:"phorum_mod_embed_phorum_common_pre";}}s:6:"common";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:30:"phorum_mod_embed_phorum_common";}}s:16:"common_post_user";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:40:"phorum_mod_embed_phorum_common_post_user";}}s:12:"after_header";a:2:{s:4:"mods";a:2:{i:0;s:12:"embed_phorum";i:1;s:7:"smileys";}s:5:"funcs";a:2:{i:0;s:36:"phorum_mod_embed_phorum_after_header";i:1;s:31:"phorum_mod_smileys_after_header";}}s:12:"cc_save_user";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:36:"phorum_mod_embed_phorum_cc_save_user";}}s:4:"list";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:28:"phorum_mod_embed_phorum_list";}}s:4:"read";a:2:{s:4:"mods";a:1:{i:0;s:12:"embed_phorum";}s:5:"funcs";a:1:{i:0;s:28:"phorum_mod_embed_phorum_read";}}}
+  PhorumSettings_mods:
+    name: mods
+    type: S
+    data: >
+      a:7:{s:6:"bbcode";s:1:"1";s:12:"editor_tools";s:1:"0";s:12:"embed_phorum";s:1:"1";s:4:"html";s:1:"0";s:8:"markdown";s:1:"0";s:7:"replace";s:1:"0";s:7:"smileys";s:1:"1";}
+  PhorumSettings_private_key:
+    name: private_key
+    type: V
+    data: KmFbwVDDn9NmWWPqg9JEr4rZ&JE6v5Tgrzx3vaHY
+  PhorumSettings_http_path:
+    name: http_path
+    type: V
+    data: http://localhost/forum
+  PhorumSettings_system_email_from_address:
+    name: system_email_from_address
+    type: V
+    data: unconfigured@example.com
+  PhorumSettings_installed:
+    name: installed
+    type: V
+    data: 1
+  PhorumSettings_mod_smileys:
+    name: mod_smileys
+    type: S
+    data: >
+      a:4:{s:6:"prefix";s:22:"./mods/smileys/images/";s:7:"smileys";a:21:{i:0;a:6:{s:6:"search";s:4:"(:P)";s:3:"alt";s:39:"spinning
+      smiley sticking its tongue
+      out";s:6:"smiley";s:12:"smiley25.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:1;a:6:{s:6:"search";s:4:"(td)";s:3:"alt";s:11:"thumbs
+      down";s:6:"smiley";s:12:"smiley23.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:2;a:6:{s:6:"search";s:4:"(tu)";s:3:"alt";s:9:"thumbs
+      up";s:6:"smiley";s:12:"smiley24.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:3;a:6:{s:6:"search";s:4:":)-D";s:3:"alt";s:17:"smileys
+      with
+      beer";s:6:"smiley";s:12:"smiley15.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:4;a:6:{s:6:"search";s:4:">:D<";s:3:"alt";s:17:"the
+      finger
+      smiley";s:6:"smiley";s:12:"smiley14.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:5;a:6:{s:6:"search";s:3:"(:D";s:3:"alt";s:23:"smiling
+      bouncing
+      smiley";s:6:"smiley";s:12:"smiley12.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:6;a:6:{s:6:"search";s:3:"8-)";s:3:"alt";s:18:"eye
+      rolling
+      smiley";s:6:"smiley";s:11:"smilie8.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:7;a:6:{s:6:"search";s:3:":)o";s:3:"alt";s:15:"drinking
+      smiley";s:6:"smiley";s:12:"smiley16.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:8;a:6:{s:6:"search";s:3:"::o";s:3:"alt";s:18:"eye
+      popping
+      smiley";s:6:"smiley";s:12:"smilie10.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:9;a:6:{s:6:"search";s:3:"B)-";s:3:"alt";s:14:"smoking
+      smiley";s:6:"smiley";s:11:"smilie7.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:10;a:6:{s:6:"search";s:2:":(";s:3:"alt";s:10:"sad
+      smiley";s:6:"smiley";s:11:"smilie2.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:11;a:6:{s:6:"search";s:2:":)";s:3:"alt";s:14:"smiling
+      smiley";s:6:"smiley";s:11:"smilie1.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:12;a:6:{s:6:"search";s:2:":?";s:3:"alt";s:12:"moody
+      smiley";s:6:"smiley";s:12:"smiley17.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:13;a:6:{s:6:"search";s:2:":D";s:3:"alt";s:15:"grinning
+      smiley";s:6:"smiley";s:11:"smilie5.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:14;a:6:{s:6:"search";s:2:":P";s:3:"alt";s:26:"tongue
+      sticking out
+      smiley";s:6:"smiley";s:11:"smilie6.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:15;a:6:{s:6:"search";s:2:":S";s:3:"alt";s:15:"confused
+      smiley";s:6:"smiley";s:12:"smilie11.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:16;a:6:{s:6:"search";s:2:":X";s:3:"alt";s:12:"angry
+      smiley";s:6:"smiley";s:11:"smilie9.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:17;a:6:{s:6:"search";s:2:":o";s:3:"alt";s:14:"yawning
+      smiley";s:6:"smiley";s:11:"smilie4.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:18;a:6:{s:6:"search";s:2:";)";s:3:"alt";s:14:"winking
+      smiley";s:6:"smiley";s:11:"smilie3.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:19;a:6:{s:6:"search";s:2:"B)";s:3:"alt";s:11:"cool
+      smiley";s:6:"smiley";s:8:"cool.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}i:20;a:6:{s:6:"search";s:2:"X(";s:3:"alt";s:10:"hot
+      smiley";s:6:"smiley";s:7:"hot.gif";s:4:"uses";i:2;s:6:"active";b:1;s:8:"is_alias";b:0;}}s:12:"replacements";a:2:{s:7:"subject";a:2:{i:0;a:21:{i:0;s:4:"(:P)";i:1;s:4:"(td)";i:2;s:4:"(tu)";i:3;s:4:":)-D";i:4;s:10:"&gt;:D&lt;";i:5;s:3:"(:D";i:6;s:3:"8-)";i:7;s:3:":)o";i:8;s:3:"::o";i:9;s:3:"B)-";i:10;s:2:":(";i:11;s:2:":)";i:12;s:2:":?";i:13;s:2:":D";i:14;s:2:":P";i:15;s:2:":S";i:16;s:2:":X";i:17;s:2:":o";i:18;s:2:";)";i:19;s:2:"B)";i:20;s:2:"X(";}i:1;a:21:{i:0;s:165:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley25.gif"
+      alt="spinning smiley sticking its tongue
+      out" title="spinning smiley sticking its
+      tongue out"/>";i:1;s:109:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley23.gif"
+      alt="thumbs down" title="thumbs
+      down"/>";i:2;s:105:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley24.gif"
+      alt="thumbs up" title="thumbs
+      up"/>";i:3;s:121:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley15.gif"
+      alt="smileys with beer" title="smileys
+      with beer"/>";i:4;s:121:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley14.gif"
+      alt="the finger smiley" title="the
+      finger smiley"/>";i:5;s:133:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley12.gif"
+      alt="smiling bouncing smiley"
+      title="smiling bouncing
+      smiley"/>";i:6;s:122:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie8.gif"
+      alt="eye rolling smiley" title="eye
+      rolling smiley"/>";i:7;s:117:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley16.gif"
+      alt="drinking smiley" title="drinking
+      smiley"/>";i:8;s:123:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie10.gif"
+      alt="eye popping smiley" title="eye
+      popping smiley"/>";i:9;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie7.gif"
+      alt="smoking smiley" title="smoking
+      smiley"/>";i:10;s:106:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie2.gif"
+      alt="sad smiley" title="sad
+      smiley"/>";i:11;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie1.gif"
+      alt="smiling smiley" title="smiling
+      smiley"/>";i:12;s:111:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley17.gif"
+      alt="moody smiley" title="moody
+      smiley"/>";i:13;s:116:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie5.gif"
+      alt="grinning smiley" title="grinning
+      smiley"/>";i:14;s:138:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie6.gif"
+      alt="tongue sticking out smiley"
+      title="tongue sticking out
+      smiley"/>";i:15;s:117:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie11.gif"
+      alt="confused smiley" title="confused
+      smiley"/>";i:16;s:110:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie9.gif"
+      alt="angry smiley" title="angry
+      smiley"/>";i:17;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie4.gif"
+      alt="yawning smiley" title="yawning
+      smiley"/>";i:18;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie3.gif"
+      alt="winking smiley" title="winking
+      smiley"/>";i:19;s:105:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/cool.gif"
+      alt="cool smiley" title="cool
+      smiley"/>";i:20;s:102:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/hot.gif"
+      alt="hot smiley" title="hot
+      smiley"/>";}}s:4:"body";a:2:{i:0;a:21:{i:0;s:4:"(:P)";i:1;s:4:"(td)";i:2;s:4:"(tu)";i:3;s:4:":)-D";i:4;s:10:"&gt;:D&lt;";i:5;s:3:"(:D";i:6;s:3:"8-)";i:7;s:3:":)o";i:8;s:3:"::o";i:9;s:3:"B)-";i:10;s:2:":(";i:11;s:2:":)";i:12;s:2:":?";i:13;s:2:":D";i:14;s:2:":P";i:15;s:2:":S";i:16;s:2:":X";i:17;s:2:":o";i:18;s:2:";)";i:19;s:2:"B)";i:20;s:2:"X(";}i:1;a:21:{i:0;s:165:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley25.gif"
+      alt="spinning smiley sticking its tongue
+      out" title="spinning smiley sticking its
+      tongue out"/>";i:1;s:109:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley23.gif"
+      alt="thumbs down" title="thumbs
+      down"/>";i:2;s:105:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley24.gif"
+      alt="thumbs up" title="thumbs
+      up"/>";i:3;s:121:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley15.gif"
+      alt="smileys with beer" title="smileys
+      with beer"/>";i:4;s:121:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley14.gif"
+      alt="the finger smiley" title="the
+      finger smiley"/>";i:5;s:133:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley12.gif"
+      alt="smiling bouncing smiley"
+      title="smiling bouncing
+      smiley"/>";i:6;s:122:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie8.gif"
+      alt="eye rolling smiley" title="eye
+      rolling smiley"/>";i:7;s:117:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley16.gif"
+      alt="drinking smiley" title="drinking
+      smiley"/>";i:8;s:123:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie10.gif"
+      alt="eye popping smiley" title="eye
+      popping smiley"/>";i:9;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie7.gif"
+      alt="smoking smiley" title="smoking
+      smiley"/>";i:10;s:106:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie2.gif"
+      alt="sad smiley" title="sad
+      smiley"/>";i:11;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie1.gif"
+      alt="smiling smiley" title="smiling
+      smiley"/>";i:12;s:111:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smiley17.gif"
+      alt="moody smiley" title="moody
+      smiley"/>";i:13;s:116:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie5.gif"
+      alt="grinning smiley" title="grinning
+      smiley"/>";i:14;s:138:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie6.gif"
+      alt="tongue sticking out smiley"
+      title="tongue sticking out
+      smiley"/>";i:15;s:117:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie11.gif"
+      alt="confused smiley" title="confused
+      smiley"/>";i:16;s:110:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie9.gif"
+      alt="angry smiley" title="angry
+      smiley"/>";i:17;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie4.gif"
+      alt="yawning smiley" title="yawning
+      smiley"/>";i:18;s:114:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/smilie3.gif"
+      alt="winking smiley" title="winking
+      smiley"/>";i:19;s:105:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/cool.gif"
+      alt="cool smiley" title="cool
+      smiley"/>";i:20;s:102:"<img
+      class="mod_smileys_img"
+      src="./mods/smileys/images/hot.gif"
+      alt="hot smiley" title="hot
+      smiley"/>";}}}s:10:"do_smileys";b:1;}
+PhorumSearch:
+  PhorumSearch_1:
+    message_id: 1
+    forum_id: 1
+    search_text: |
+      Phorum Installer | Test Message | This is a test message.  You can delete it after install using the admin.
+     
+      Phorum 5 Team
+PhorumForums:
+  PhorumForums_1:
+    name: Test Forum
+    active: 1
+    description: >
+      This is a test forum.  Feel free to
+      delete it or edit after installation.
+    template: embed_default
+    folder_flag: 0
+    parent_id: 0
+    list_length_flat: 30
+    list_length_threaded: 15
+    moderation: 0
+    threaded_list: 0
+    threaded_read: 0
+    float_to_top: 1
+    check_duplicate: 0
+    allow_attachment_types:
+    max_attachment_size: 0
+    max_totalattachment_size: 0
+    max_attachments: 0
+    pub_perms: 1
+    reg_perms: 15
+    display_ip_address: 0
+    allow_email_notify: 1
+    language: english
+    email_moderators: 0
+    message_count: 1
+    sticky_count: 0
+    thread_count: 1
+    last_post_time: 1215807041
+    display_order: 0
+    read_length: 20
+    vroot: 0
+    edit_post: 1
+    count_views: 0
+    display_fixed: 0
+    reverse_threading: 0
+PhorumMessages:
+  PhorumMessages_1:
+    forum_id: 1
+    thread: 1
+    parent_id: 0
+    author: Phorum Installer
+    subject: Test Message
+    body: |
+      This is a test message.  You can delete it after install using the admin.
+     
+      Phorum 5 Team
+    email:
+    ip: 127.0.0.1
+    status: 2
+    msgid:
+    modifystamp: 1215807041
+    user_id: 0
+    thread_count: 1
+    moderator_post: 0
+    sort: 2
+    datestamp: 1215807041
+    meta: >
+      a:3:{s:11:"recent_post";a:3:{s:7:"user_id";s:1:"0";s:6:"author";s:16:"Phorum
+      Installer";s:10:"message_id";s:1:"1";}s:11:"message_ids";a:1:{i:0;i:1;}s:21:"message_ids_moderator";a:1:{i:0;i:1;}}
+    viewcount: 0
+    closed: 1
+

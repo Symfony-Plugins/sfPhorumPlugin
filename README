@@ -1,0 +1,58 @@
+= sfPhorum plugin (for symfony 1.0) =
+
+== Installation ==
+
+Download phorum-5.1.25.zip and unzip
+
+Download the embed module from:
+
+http://www.phorum.org/phorum5/read.php?28,53902
+
+Uncompress this module into the 'mods' directory in your phorum directory.
+
+Insert the fixtures.
+
+Look at the app.yml.sample, and you'll see the vendor_path setting that
+you will need to add to your applications own app.yml.
+
+=== Layout Changes ===
+
+add to layout within the head section:
+
+{{{
+<?php include_title() ?>
+<?php
+  if (has_slot('sfPhorum')) {
+    include_slot('sfPhorum');
+  }
+?>
+}}}
+
+This change will allow sfPhorum to insert things into the head section
+of your site, for example RSS links.
+
+=== Enable the module ===
+
+modify settings.yml to this:
+
+{{{
+all:
+  .settings:
+    enabled_modules:        [default, sfGuardAuth, sfPhorumForum]
+}}}
+
+== TODO ==
+
+  * grep code for any 'FIXME's
+  * alter fixtures so that there's no mention of 'pookey' (the domain name is set
+    in there for the forum.. how to solve that?
+  * alter schema so that the search index is fulltext
+  * do something to allow admin.php access...
+  * change the user sync so that only users with permission X are set as administrators
+
+== Changelog ==
+
+=== 2007-10-05 | 0.1 Beta ===
+
+  * pookey: initial release
+Nothing to see here yet

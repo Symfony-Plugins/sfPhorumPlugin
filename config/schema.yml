@@ -1,0 +1,767 @@
+propel:
+  _attributes:
+    package: plugins.sfPhorumPlugin.lib.model
+  phorum_banlists:
+    _attributes:
+      idMethod: native
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    forum_id:
+      type: INTEGER
+      required: true
+      default: 0
+    type:
+      type: TINYINT
+      required: true
+      default: 0
+    pcre:
+      type: TINYINT
+      required: true
+      default: 0
+    string:
+      type: VARCHAR
+      size: 255
+      required: true
+      default:
+    _indexes:
+      forum_id:
+        - forum_id
+  phorum_files:
+    _attributes:
+      idMethod: native
+    file_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    filename:
+      type: VARCHAR
+      size: 255
+      required: true
+      default:
+    filesize:
+      type: INTEGER
+      required: true
+      default: 0
+    file_data:
+      type: LONGVARCHAR
+      required: true
+    add_datetime:
+      type: INTEGER
+      required: true
+      default: 0
+    message_id:
+      type: INTEGER
+      required: true
+      default: 0
+    link:
+      type: VARCHAR
+      size: 10
+      required: true
+      default:
+    _indexes:
+      add_datetime:
+        - add_datetime
+      message_id_link:
+        - message_id
+        - link
+  phorum_forum_group_xref:
+    forum_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    group_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    permission:
+      type: INTEGER
+      required: true
+      default: 0
+    _indexes:
+      group_id:
+        - group_id
+  phorum_forums:
+    _attributes:
+      idMethod: native
+    forum_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    name:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    active:
+      type: SMALLINT
+      required: true
+      default: 0
+    description:
+      type: LONGVARCHAR
+    template:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    folder_flag:
+      type: TINYINT
+      required: true
+      default: 0
+    parent_id:
+      type: INTEGER
+      required: true
+      default: 0
+    list_length_flat:
+      type: INTEGER
+      required: true
+      default: 0
+    list_length_threaded:
+      type: INTEGER
+      required: true
+      default: 0
+    moderation:
+      type: INTEGER
+      required: true
+      default: 0
+    threaded_list:
+      type: TINYINT
+      required: true
+      default: 0
+    threaded_read:
+      type: TINYINT
+      required: true
+      default: 0
+    float_to_top:
+      type: TINYINT
+      required: true
+      default: 0
+    check_duplicate:
+      type: TINYINT
+      required: true
+      default: 0
+    allow_attachment_types:
+      type: VARCHAR
+      size: 100
+      required: true
+    max_attachment_size:
+      type: INTEGER
+      required: true
+      default: 0
+    max_totalattachment_size:
+      type: INTEGER
+      required: true
+      default: 0
+    max_attachments:
+      type: INTEGER
+      required: true
+      default: 0
+    pub_perms:
+      type: INTEGER
+      required: true
+      default: 0
+    reg_perms:
+      type: INTEGER
+      required: true
+      default: 0
+    display_ip_address:
+      type: SMALLINT
+      required: true
+      default: 1
+    allow_email_notify:
+      type: SMALLINT
+      required: true
+      default: 1
+    language:
+      type: VARCHAR
+      size: 100
+      required: true
+      default: english
+    email_moderators:
+      type: TINYINT
+      required: true
+      default: 0
+    message_count:
+      type: INTEGER
+      required: true
+      default: 0
+    sticky_count:
+      type: INTEGER
+      required: true
+      default: 0
+    thread_count:
+      type: INTEGER
+      required: true
+      default: 0
+    last_post_time:
+      type: INTEGER
+      required: true
+      default: 0
+    display_order:
+      type: INTEGER
+      required: true
+      default: 0
+    read_length:
+      type: INTEGER
+      required: true
+      default: 0
+    vroot:
+      type: INTEGER
+      required: true
+      default: 0
+    edit_post:
+      type: TINYINT
+      required: true
+      default: 1
+    template_settings:
+      type: LONGVARCHAR
+    count_views:
+      type: TINYINT
+      required: true
+      default: 0
+    display_fixed:
+      type: TINYINT
+      required: true
+      default: 0
+    reverse_threading:
+      type: TINYINT
+      required: true
+      default: 0
+    inherit_id:
+      type: INTEGER
+    _indexes:
+      name:
+        - name
+      active:
+        - active
+        - parent_id
+      group_id:
+        - parent_id
+  phorum_groups:
+    _attributes:
+      idMethod: native
+    group_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    name:
+      type: VARCHAR
+      size: 255
+      required: true
+      default: 0
+    open:
+      type: TINYINT
+      required: true
+      default: 0
+  phorum_messages:
+    _attributes:
+      idMethod: native
+    message_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    forum_id:
+      type: INTEGER
+      required: true
+      default: 0
+    thread:
+      type: INTEGER
+      required: true
+      default: 0
+    parent_id:
+      type: INTEGER
+      required: true
+      default: 0
+    author:
+      type: VARCHAR
+      size: 37
+      required: true
+    subject:
+      type: VARCHAR
+      size: 255
+      required: true
+    body:
+      type: LONGVARCHAR
+      required: true
+    email:
+      type: VARCHAR
+      size: 100
+      required: true
+    ip:
+      type: VARCHAR
+      size: 255
+      required: true
+    status:
+      type: TINYINT
+      required: true
+      default: 2
+    msgid:
+      type: VARCHAR
+      size: 100
+      required: true
+    modifystamp:
+      type: INTEGER
+      required: true
+      default: 0
+    user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    thread_count:
+      type: INTEGER
+      required: true
+      default: 0
+    moderator_post:
+      type: TINYINT
+      required: true
+      default: 0
+    sort:
+      type: TINYINT
+      required: true
+      default: 2
+    datestamp:
+      type: INTEGER
+      required: true
+      default: 0
+    meta:
+      type: LONGVARCHAR
+    viewcount:
+      type: INTEGER
+      required: true
+      default: 0
+    closed:
+      type: TINYINT
+      required: true
+      default: 0
+    _indexes:
+      thread_message:
+        - thread
+        - message_id
+      thread_forum:
+        - thread
+        - forum_id
+      special_threads:
+        - sort
+        - forum_id
+      status_forum:
+        - status
+        - forum_id
+      list_page_float:
+        - forum_id
+        - parent_id
+        - modifystamp
+      list_page_flat:
+        - forum_id
+        - parent_id
+        - thread
+      post_count:
+        - forum_id
+        - status
+        - parent_id
+      dup_check:
+        - forum_id
+        - author
+        - subject
+        - datestamp
+      forum_max_message:
+        - forum_id
+        - message_id
+        - status
+        - parent_id
+      last_post_time:
+        - forum_id
+        - status
+        - modifystamp
+      next_prev_thread:
+        - forum_id
+        - status
+        - thread
+      user_id:
+        - user_id
+  phorum_pm_buddies:
+    _attributes:
+      idMethod: native
+    pm_buddy_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    buddy_user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    _indexes:
+      buddy_user_id:
+        - buddy_user_id
+    _uniques:
+      userids:
+        - user_id
+        - buddy_user_id
+  phorum_pm_folders:
+    _attributes:
+      idMethod: native
+    pm_folder_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    foldername:
+      type: VARCHAR
+      size: 20
+      required: true
+      default:
+  phorum_pm_messages:
+    _attributes:
+      idMethod: native
+    pm_message_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    from_user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    from_username:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    subject:
+      type: VARCHAR
+      size: 100
+      required: true
+      default:
+    message:
+      type: LONGVARCHAR
+      required: true
+    datestamp:
+      type: INTEGER
+      required: true
+      default: 0
+    meta:
+      type: LONGVARCHAR
+  phorum_pm_xref:
+    _attributes:
+      idMethod: native
+    pm_xref_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    user_id:
+      type: INTEGER
+      required: true
+      default: 0
+    pm_folder_id:
+      type: INTEGER
+      required: true
+      default: 0
+    special_folder:
+      type: VARCHAR
+      size: 10
+    pm_message_id:
+      type: INTEGER
+      required: true
+      default: 0
+    read_flag:
+      type: TINYINT
+      required: true
+      default: 0
+    reply_flag:
+      type: TINYINT
+      required: true
+      default: 0
+    _indexes:
+      xref:
+        - user_id
+        - pm_folder_id
+        - pm_message_id
+      read_flag:
+        - read_flag
+  phorum_search:
+    message_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    forum_id:
+      type: INTEGER
+      required: true
+      default: 0
+    search_text:
+      type: LONGVARCHAR
+      required: true
+    _indexes:
+      forum_id:
+        - forum_id
+#      search_text:
+#        - search_text
+  phorum_settings:
+    name:
+      type: VARCHAR
+      size: 255
+      required: true
+      primaryKey: true
+      default:
+    type:
+      type: CHAR
+      required: true
+      default: V
+    data:
+      type: LONGVARCHAR
+      required: true
+  phorum_subscribers:
+    user_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    forum_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    sub_type:
+      type: INTEGER
+      required: true
+      default: 0
+    thread:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    _indexes:
+      forum_id:
+        - forum_id
+        - thread
+        - sub_type
+  phorum_user_custom_fields:
+    user_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    type:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    data:
+      type: LONGVARCHAR
+  phorum_user_group_xref:
+    user_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    group_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    status:
+      type: TINYINT
+      required: true
+      default: 1
+  phorum_user_newflags:
+    user_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    forum_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    message_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+  phorum_user_permissions:
+    user_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    forum_id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+      default: 0
+    permission:
+      type: INTEGER
+      required: true
+      default: 0
+    _indexes:
+      forum_id:
+        - forum_id
+        - permission
+  phorum_users:
+    _attributes:
+      idMethod: native
+    user_id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    username:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    password:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    cookie_sessid_lt:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    sessid_st:
+      type: VARCHAR
+      size: 50
+      required: true
+      default: ""
+    sessid_st_timeout:
+      type: INTEGER
+      required: true
+      default: 0
+    password_temp:
+      type: VARCHAR
+      size: 50
+      required: true
+      default:
+    email:
+      type: VARCHAR
+      size: 100
+      required: true
+      default:
+    email_temp:
+      type: VARCHAR
+      size: 110
+      required: false
+    hide_email:
+      type: TINYINT
+      required: true
+      default: 0
+    active:
+      type: TINYINT
+      required: true
+      default: 0
+    user_data:
+      type: LONGVARCHAR
+    signature:
+      type: LONGVARCHAR
+    threaded_list:
+      type: TINYINT
+      required: true
+      default: 0
+    posts:
+      type: INTEGER
+      required: true
+      default: 0
+    admin:
+      type: TINYINT
+      required: true
+      default: 0
+    threaded_read:
+      type: TINYINT
+      required: true
+      default: 0
+    date_added:
+      type: INTEGER
+      required: true
+      default: 0
+    date_last_active:
+      type: INTEGER
+      required: true
+      default: 0
+    last_active_forum:
+      type: INTEGER
+      required: true
+      default: 0
+    hide_activity:
+      type: TINYINT
+      required: true
+      default: 0
+    show_signature:
+      type: TINYINT
+      required: true
+      default: 0
+    email_notify:
+      type: TINYINT
+      required: true
+      default: 0
+    pm_email_notify:
+      type: TINYINT
+      required: true
+      default: 1
+    tz_offset:
+      type: TINYINT
+      required: true
+      default: -99
+    is_dst:
+      type: TINYINT
+      required: true
+      default: 0
+    user_language:
+      type: VARCHAR
+      size: 100
+      required: false
+    user_template:
+      type: VARCHAR
+      size: 100
+      required: true
+    moderator_data:
+      type: LONGVARCHAR
+    moderation_email:
+      type: TINYINT
+      required: true
+      default: 1
+    _indexes:
+      active:
+        - active
+      userpass:
+        - username
+        - password
+      sessid_st:
+        - sessid_st
+      cookie_sessid_lt:
+        - cookie_sessid_lt
+      activity:
+        - date_last_active
+        - hide_activity
+        - last_active_forum
+      date_added:
+        - date_added
+      email_temp:
+        - email_temp
+    _uniques:
+      username:
+        - username
+
